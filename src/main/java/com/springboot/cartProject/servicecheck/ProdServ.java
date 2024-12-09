@@ -25,4 +25,12 @@ public class ProdServ {
 
         return prodList;
     }
+
+
+    public Prod gettingprodyId(int prodId) {
+
+        return prodList.stream().filter(prd -> prd.getId()==prodId).findFirst().get();
+    }
+
+
 }

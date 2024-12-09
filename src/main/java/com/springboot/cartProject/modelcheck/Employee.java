@@ -2,16 +2,20 @@ package com.springboot.cartProject.modelcheck;
 
 import lombok.Data;
 
+import java.util.Date;
+
 @Data
 public class Employee {
 
-    private Long id;
-
-
+    private Long EmployeeID;
     private String name;
-    private double salary;
+    private int Age;
+    private int DepartmentID;
+    private Date date;
+    private double Salary;
+    private String  Location;
     private String  gmail;
-    private boolean present;
-    private int noOfSkills;
+    private int forkey_dep;
+
 
 }
